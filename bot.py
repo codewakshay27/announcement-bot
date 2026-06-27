@@ -1,3 +1,5 @@
+import asyncio
+asyncio.set_event_loop(asyncio.new_event_loop())
 import os
 from telegram import Update
 from telegram.ext import (
@@ -7,7 +9,7 @@ from telegram.ext import (
     filters,
 )
 
-BOT_TOKEN = "8829405193:AAGEzV-OqB-Xbt1-W28MpMNfxuj2pUS2XwY"
+BOT_TOKEN = "8829405193:AAHRsQGk_3CBUWkXVyu6M1LXEpftEW2-kuE"
 
 STUDENT_GROUP_ID = -1004308812014
 ADMIN_GROUP_ID = -5592669200
