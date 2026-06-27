@@ -7,9 +7,10 @@ from telegram.ext import (
     filters,
 )
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-STUDENT_GROUP_ID = int(os.getenv("STUDENT_GROUP_ID"))
-ADMIN_GROUP_ID = int(os.getenv("ADMIN_GROUP_ID"))
+BOT_TOKEN = "8829405193:AAGEzV-OqB-Xbt1-W28MpMNfxuj2pUS2XwY"
+
+STUDENT_GROUP_ID = -1004308812014
+ADMIN_GROUP_ID = -5592669200
 
 async def forward_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_chat.id != ADMIN_GROUP_ID:
